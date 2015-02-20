@@ -60,14 +60,10 @@ header.main-header h1 {
   color:#ECECEC !important;
 }
 
-span, p {
-  /*color: #616161;*/
-}
 .message-info {
   z-index: 100;
   display: block;
-  margin: 0 auto;
-  margin-top: -5px;
+  margin: -6px auto 0 auto;
   padding: 2px;
   width: 62%;
   font-size: 1.38em;
@@ -77,21 +73,19 @@ span, p {
 }
 
 section.inlineBox {
+  position: static;
+  top: -.56em;
   width: 71px;
-  height: 70px;
   display: inline-block;
   padding: 4px;
   margin: 0 24px;
   text-align: center;
-  top: -.65em;
 }
 
 .circle {
   border: 2px solid;
   border-radius: 50%;
 }
-
-.box .message-info {top: -10px;}
 
 .inlineBox var {
   font-style: normal;
@@ -103,12 +97,12 @@ section.inlineBox {
 .message-info:nth-child(3):after {
   content: "";
   position: relative;
-  top: -0.4em;
+  top: -0.8em;
   display: block;
   margin: 0 auto;
   padding: 0;
   width: 40%;
   height: 4px;
-  border-top: 1px solid #ECECEC;
-  border-bottom: 1px solid #ECECEC;
+  border-top: 2px solid #ECECEC;
+  border-bottom: 2px solid #ECECEC;
 }
