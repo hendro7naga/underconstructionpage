@@ -18,7 +18,7 @@ html, body {
 }
 
 .message-info, span, p, a, textarea {
-  font-family: 'ubuntu', serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 header.main-header {
@@ -70,17 +70,17 @@ span, p {
   margin-top: -5px;
   padding: 2px;
   width: 62%;
-  font-size: 1.8em;
+  font-size: 1.38em;
   text-align: center;
   text-decoration: none;
   line-height: 150%;
 }
 
 section.inlineBox {
-  width: 82px;
-  height: 80px;
+  width: 71px;
+  height: 70px;
   display: inline-block;
-  padding: 6px;
+  padding: 4px;
   margin: 0 24px;
   text-align: center;
   top: -.65em;
@@ -97,7 +97,18 @@ section.inlineBox {
   font-style: normal;
   position: relative;
   display: inline-block;
-  margin: 22% 0;
-  margin-left: -2px;
-  font-size: 1.6em;
+  margin: 31% 0 22%;
+  font-size: 1.4em;
+}
+.message-info:nth-child(3):after {
+  content: "";
+  position: relative;
+  top: -0.4em;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 40%;
+  height: 4px;
+  border-top: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
