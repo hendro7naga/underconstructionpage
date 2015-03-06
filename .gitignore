@@ -1,0 +1,8 @@
+package.json
+*.grunt
+*.log
+
+# ignore dir production
+
+node_modules
+js
