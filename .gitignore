@@ -1,5 +1,5 @@
-./package.json
-./Gruntfile.js
+package.json
+Gruntfile.js
 *.grunt
 *.log
 
