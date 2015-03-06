@@ -34,5 +34,20 @@
     </div>
   </div>
   <script src="js/timer.min.js"></script>
+  <script>
+      TIMER.remains({
+        finishing: {
+            hours: 22,
+            days: 22,
+            months: 8,
+            years: 2015
+        },
+        elements: {
+            elMonth: document.getElementById("months"),
+            elDays: document.getElementById("days"),
+            elHours: document.getElementById("hours")
+        }
+    });
+  </script>
 </body>
 </html>

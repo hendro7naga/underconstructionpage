@@ -37,7 +37,6 @@ var TIMER = TIMER || (function (el) {
             el.elMonth.textContent  = Number(parseInt(month, 10));
             el.elDays.textContent   = days;
             el.elHours.textContent  = hoursF;
-            console.log(el.elMonth);
         },
         remains = function (data) {
             calData(data.finishing, data.elements);
@@ -46,19 +45,3 @@ var TIMER = TIMER || (function (el) {
         remains: remains
     };
 }(window));
-window.addEventListener('load', function () {
-    'use strict';
-    TIMER.remains({
-        finishing: {
-            hours: 22,
-            days: 22,
-            months: 8,
-            years: 2015
-        },
-        elements: {
-            elMonth: document.getElementById("months"),
-            elDays: document.getElementById("days"),
-            elHours: document.getElementById("hours")
-        }
-    });
-});
