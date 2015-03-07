@@ -7,3 +7,6 @@ Gruntfile.js
 
 node_modules
 js
+
+# ignore dir image
+img

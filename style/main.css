@@ -72,8 +72,8 @@ header.main-header h1 {
   line-height: 150%;
 }
 
-section.inlineBox {
-  position: static;
+.inlineBox {
+  position: relative;
   top: -.56em;
   width: 71px;
   display: inline-block;
@@ -82,7 +82,12 @@ section.inlineBox {
   text-align: center;
 }
 
+.special {
+  top: -8px;
+}
+
 .circle {
+  top: 1.2px;
   border: 2px solid;
   border-radius: 50%;
 }
@@ -94,10 +99,17 @@ section.inlineBox {
   margin: 31% 0 22%;
   font-size: 1.4em;
 }
+.dcm:nth-child(2) .message-info {
+  position: relative;
+  top: -10px;
+  padding: 0;
+  margin-bottom: -12px;
+  font-size: 1.8em;
+}
 .message-info:nth-child(3):after {
   content: "";
   position: relative;
-  top: -0.8em;
+  top: -1.2em;
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -105,4 +117,23 @@ section.inlineBox {
   height: 4px;
   border-top: 2px solid #ECECEC;
   border-bottom: 2px solid #ECECEC;
+}
+.dn {
+  position: relative;
+  top: 12px;
+  display: block;
+  width: 12%;
+  margin: 4px auto;
+  padding: 1px;
+  text-align: center;
+  border: 2px solid #767676;
+  border-radius: 10px;
+}
+.dn nav {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  font-size: 1.6em;
+  line-height: 105%;
+  color: #606060;
 }
