@@ -1,20 +1,18 @@
 html, body {
+	position: relative;
   font-size: 12pt;
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
   background-color: rgba(247, 244, 244, 0.88);
 }
 
 .wrapper {
-  z-index: 100;
+  z-index: 400;
   display: block;
   margin: 0 auto;
-  padding: 0;
+  padding: 2px 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(236, 236, 236, 0.76);
 }
 
 .message-info, span, p, a, textarea {
@@ -51,6 +49,10 @@ header.main-header h1 {
   padding: 2px 0;
   box-sizing: border-box;
   color: rgba(97, 97, 97, 0.86);
+}
+
+.dcm:nth-child(4) {
+		margin-top: 6px;
 }
 
 .box {
@@ -120,20 +122,47 @@ header.main-header h1 {
 }
 .dn {
   position: relative;
-  top: 12px;
+  top: 15px;
   display: block;
   width: 12%;
-  margin: 4px auto;
+  margin: 16px auto;
   padding: 1px;
   text-align: center;
   border: 2px solid #767676;
   border-radius: 10px;
 }
 .dn nav {
-  position: relative;
+  position: static;
   display: inline-block;
   padding: 4px;
   font-size: 1.6em;
   line-height: 105%;
   color: #606060;
+}
+.dcm:nth-child(4) .message-info {width: 50%; margin-top: 8px;}
+footer.mainFooter {
+		position: relative;
+		bottom: -6px;
+		margin: 0px;
+		padding: 10px;
+		box-sizing: border-box;
+		font-size: 10pt;
+		background-color: #333;
+		color: #B6B6B6;
+}
+.mainFooter .message-info p {
+		position: relative;
+		top: 6px;
+		padding: 1px;
+		margin: 1px;
+}
+.mainFooter a {
+		padding: 0;
+		margin: 0;
+		color: #B6B6B6;
+		text-decoration: none;
+}
+.mainFooter a:hover {
+		color: #0085B2;
+		text-decoration: underline;
 }
