@@ -1,25 +1,30 @@
 html, body {
-	position: relative;
+  position: relative;
   font-size: 12pt;
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
   background-color: rgba(247, 244, 244, 0.88);
 }
-
+div, header, footer, h1, h2, h3 { position: relative; }
+.message-info, span, p, a, textarea { font-family: 'Ubuntu Condensed', sans-serif; }
 .wrapper {
   z-index: 400;
+  height: 100%;
   display: block;
   margin: 0 auto;
   padding: 2px 0;
+}
+.grouping {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 4px 0;
   width: 100%;
+  height: 110%;
 }
-
-.message-info, span, p, a, textarea {
-  font-family: 'Ubuntu Condensed', sans-serif;
-}
-
-header.main-header {
+.main-header {
   z-index: 200;
   display: block;
   box-sizing: border-box;
@@ -29,7 +34,7 @@ header.main-header {
   font-family: 'Lobster Two', cursive;
   text-align: center;
 }
-header.main-header h1 {
+.main-header h1 {
   z-index: 100;
   display: inline-block;
   margin: 8px auto;
@@ -49,10 +54,6 @@ header.main-header h1 {
   padding: 2px 0;
   box-sizing: border-box;
   color: rgba(97, 97, 97, 0.86);
-}
-
-.dcm:nth-child(4) {
-		margin-top: 6px;
 }
 
 .box {
@@ -139,7 +140,7 @@ header.main-header h1 {
   line-height: 105%;
   color: #606060;
 }
-.dcm:nth-child(4) .message-info {width: 50%; margin-top: 8px;}
+.dcm:nth-child(4) .message-info {width: 50%; margin: 14px auto; padding: 12px 2px;}
 nav.linkgroup {
   position: relative;
   padding: 8px;
@@ -191,31 +192,27 @@ nav.linkgroup {
 .linkgroup #gplus a:before {
 	background-position: -315px -461px;
 }
-.linkgroup #twit a:hover {color: #515151;}
+.linkgroup a:hover { color: #515151; }
 .linkgroup #twit a:hover:before {
 	background-position: -29px -49px;
 	border-color: #515151;
 }
-.linkgroup #fb a:hover {color: #515151;}
 .linkgroup #fb a:hover:before {
 	background-position: -30px -277px;
 	border-color: #515151;
 }
-.linkgroup #gplus a:hover {color: #515151;}
 .linkgroup #gplus a:hover:before {
 	background-position: -315px -504px;
 	border-color: #515151;
 }
-
-footer.mainFooter {
-	position: relative;
+.mainFooter {
 	bottom: -6px;
 	margin: 0px;
 	padding: 10px;
 	box-sizing: border-box;
 	font-size: 10pt;
 	background-color: #333;
-	color: #B6B6B6;
+	color: rgb(223, 227, 228);
 }
 .mainFooter .message-info small {
 	position: relative;
@@ -227,10 +224,10 @@ footer.mainFooter {
 .mainFooter a {
 	padding: 0;
 	margin: 0;
-	color: #B6B6B6;
+	color: rgb(223, 227, 228);
 	text-decoration: none;
 }
 .mainFooter a:hover {
 	color: #0085B2;
-	text-decoration: underline;
+	border-bottom: 2px dashed;
 }
