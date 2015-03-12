@@ -31,22 +31,29 @@
     </div>
     <div class="dcm">
         <div class="dn">
-          <nav>have an idea ?</nav>
+          <span>have an idea ?</span>
         </div>
         <section class="message-info">
           <p>If You have an idea to put in this web page, you can send me a message through the following link below</p>
+          <nav class="linkgroup">
+          	<ul>
+          		<li id="twit"><a href="https://twitter.com/hendro_7naga" target="_blank">hendro_7naga</a></li>
+          		<li id="fb"><a href="https://www.facebook.com/hendro.7naga" target="_blank">hendro.7naga</a></li>
+          		<li id="gplus"><a href="http://www.google.com/+HendroPramanaSinaga17" target="_blank">HendroPramanaSinaga17</a></li>
+          	</ul>
+          </nav>
         </section>
     </div>
     <footer class="mainFooter">
     	<section class="message-info">
     		<script>
-						(function () { 
-								var d = new Date(), el, parents;
-								parents = document.querySelector(".mainFooter .message-info");
-								el = document.createElement("p"); el.textContent = d.getFullYear(); parents.insertBefore(el, parents.firstChild); 
-						})()
-					</script>
-					<a href="http://www.hendropramana.web.id">hendropramana.web.id</a>
+					(function () {
+						var d = new Date(), el, parents;
+						parents = document.querySelector(".mainFooter .message-info");
+						el = document.createElement("small"); el.textContent = d.getFullYear(); parents.insertBefore(el, parents.firstChild); 
+					})()
+		  </script>
+		  <a href="http://www.hendropramana.web.id">hendropramana.web.id</a>
     	</section>
     </footer>
   </div>

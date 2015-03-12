@@ -131,7 +131,7 @@ header.main-header h1 {
   border: 2px solid #767676;
   border-radius: 10px;
 }
-.dn nav {
+.dn span {
   position: static;
   display: inline-block;
   padding: 4px;
@@ -140,29 +140,97 @@ header.main-header h1 {
   color: #606060;
 }
 .dcm:nth-child(4) .message-info {width: 50%; margin-top: 8px;}
-footer.mainFooter {
-		position: relative;
-		bottom: -6px;
-		margin: 0px;
-		padding: 10px;
-		box-sizing: border-box;
-		font-size: 10pt;
-		background-color: #333;
-		color: #B6B6B6;
+nav.linkgroup {
+  position: relative;
+  padding: 8px;
+  margin: 4px;
+  box-sizing: border-box;
 }
-.mainFooter .message-info p {
-		position: relative;
-		top: 6px;
-		padding: 1px;
-		margin: 1px;
+.linkgroup ul {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.linkgroup ul li {
+	position: relative;
+	left: 28px;
+	top: 16px;
+	display: inline-block;
+	padding: 6px 6px 1px;
+	margin: 2px;
+}
+.linkgroup li a {
+	position: relative;
+	display: inline-block;
+	padding: 4px 4px 1px;
+	margin: 2px 1px;
+	font-size: .68em;
+	color: rgba(65, 147, 169, 0.85);
+	font-weight: 700;
+	text-decoration: none;
+}
+.linkgroup li a:before {
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: 30%;
+	width: 36px;
+	height: 36px;
+	background: url(../img/socialmedia_iconsprites.jpg) no-repeat;
+	background-size: 32em;
+	border: 1px solid #4B99AE;
+	border-radius: 50%;
+}
+.linkgroup #twit a:before {
+	background-position: -29px -6px;
+}
+.linkgroup #fb a:before {
+	background-position: -30px -233px;
+}
+.linkgroup #gplus a:before {
+	background-position: -315px -461px;
+}
+.linkgroup #twit a:hover {color: #515151;}
+.linkgroup #twit a:hover:before {
+	background-position: -29px -49px;
+	border-color: #515151;
+}
+.linkgroup #fb a:hover {color: #515151;}
+.linkgroup #fb a:hover:before {
+	background-position: -30px -277px;
+	border-color: #515151;
+}
+.linkgroup #gplus a:hover {color: #515151;}
+.linkgroup #gplus a:hover:before {
+	background-position: -315px -504px;
+	border-color: #515151;
+}
+
+footer.mainFooter {
+	position: relative;
+	bottom: -6px;
+	margin: 0px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 10pt;
+	background-color: #333;
+	color: #B6B6B6;
+}
+.mainFooter .message-info small {
+	position: relative;
+	top: 6px;
+	display: block;
+	padding: 1px;
+	margin: 1px;
 }
 .mainFooter a {
-		padding: 0;
-		margin: 0;
-		color: #B6B6B6;
-		text-decoration: none;
+	padding: 0;
+	margin: 0;
+	color: #B6B6B6;
+	text-decoration: none;
 }
 .mainFooter a:hover {
-		color: #0085B2;
-		text-decoration: underline;
+	color: #0085B2;
+	text-decoration: underline;
 }
